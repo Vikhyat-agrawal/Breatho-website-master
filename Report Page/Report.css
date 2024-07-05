@@ -1,0 +1,338 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+body {
+    background-color: #F6F4F1;
+}
+
+#nav_bar {
+    position: fixed;
+    background-color: #ffff;
+    height: 70px;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 1536px;
+    z-index: 998;
+}
+
+#nav_hor {
+    position: fixed;
+    background-color: #1A1A1A;
+    height: 847px;
+    width: 85px;
+    margin-top: -70px;
+    z-index: 999;
+}
+#bell1 {
+    margin-left: 10%;
+}
+
+.container1 {
+    position: absolute;
+    scale: 15%;
+    left: -208px;
+    top: -147px;
+}
+
+.pro-img {
+    position: absolute;
+    right: -110px;
+    top: -215px; 
+    scale: 8%;
+    z-index: 1;
+}
+
+.pro-txt {
+    font-family: 'Dm sans';
+    font-weight: bold;
+    font-size: large;
+    position: absolute;
+    right: 25px;
+    top: 25px; 
+}
+.pro-img a {
+  text-decoration: none;
+  color: #101F24;
+}
+.pro-txt a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.icon {
+    line-height: 220%;
+    padding: 20px;
+    margin-top: 260%;
+    scale: 150%;
+    width: 8px;
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 60px;
+}
+
+/** nav end  */
+
+.Report {
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 186px;
+    height: 650px;
+    width: 1333px;
+    border-radius: 20px 0px 0px 0px;
+    background-color: #ffffff;
+}
+
+.back {
+    color: black;
+    font-family: 'Dm sans';
+    font-weight: bolder;
+    font-size: large;
+    position: fixed;
+    top: 85px;
+    left: 100px;
+}
+
+.head-tittle {
+    font-family: 'Dm sans';
+    margin-top: 20px;
+}
+.pi-graph {
+    margin-left: 40px;
+    height: 270px;
+    width: 450px;
+
+    .graph {        
+      height: 250px;
+      width: 143%;
+      margin: 0 auto 200px;
+      border: none;
+      /* border: 1px solid rgba(0, 0, 0, 0); */
+      margin-left: -98px;
+      outline: 1px solid #eee;
+      text-align: center;
+      font-size: 0;
+    }
+    
+    .graph:after {
+      height: 100%;
+      content: '';
+      display: inline-block;
+      width: 0;
+    }
+    
+    .bar {
+      font-size: 18px;
+      display: inline-block;
+      vertical-align: bottom;
+      text-align: center;
+      padding: .5em 0 0;
+      color: #fff;
+      margin: 0 .5%;
+      position: relative;
+    }
+    
+    .bar:nth-child(1) {
+      background: #1f77b4;
+    }
+    
+    .bar:nth-child(2) {
+      background: #ff7f0e;
+    }
+    
+    .bar:nth-child(3) {
+      background: #2ca02c;
+    }
+    
+    .bar:nth-child(4) {
+      background: #d62728;
+    }
+    
+    .bar:nth-child(5) {
+      background: #9467bd;
+    }
+    
+    .bar:nth-child(6) {
+      background: #8c564b;
+    }
+    
+    .bar:nth-child(7) {
+      background: #e377c2;
+    }
+    
+    .bar p {
+      position: relative;
+      top: 101%;
+      width: 100%;
+      margin: 0;
+      color: #888;
+      font-size: .8em;
+    }
+    
+}
+.pi-chart {
+    margin-left: 40px;
+    height: 270px;
+    width: 450px;
+
+    @keyframes bake-pie {
+        from {
+          transform: rotate(0deg) translate3d(0,0,0);
+        }
+      }
+      
+      .pie-chart {
+        font-family: "Open Sans", Arial;
+      }
+      
+      .pie-chart--wrapper {
+        width: 400px;
+        margin: 30px auto;
+        text-align: center;
+      }
+      
+      .pie-chart__pie, .pie-chart__legend {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .pie-chart__pie {
+        position: relative;
+        height: 200px;
+        width: 200px;
+        margin: 10px auto 35px;
+      }
+      
+      .pie-chart__pie::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        background: #EEE;
+        border-radius: 50%;
+        top: 50px;
+        left: 50px;
+      }
+      
+      .pie-chart__pie::after {
+        content: "";
+        display: block;
+        width: 120px;
+        height: 2px;
+        background: rgba(0,0,0,0.1);
+        border-radius: 50%;
+        box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
+        margin: 220px auto;
+      }
+      
+      .slice {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        clip: rect(0px, 200px, 200px, 100px);
+        animation: bake-pie 1s;
+      }
+      
+      .slice span {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black; /* Adjust this to be green */
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        clip: rect(0px, 200px, 200px, 100px);
+      }
+      
+      .pie-chart__legend {
+        display: block;
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+        background: #FFF;
+        padding: 0.75em 0.75em 0.05em;
+        font-size: 13px;
+        box-shadow: 1px 1px 0 #DDD, 2px 2px 0 #BBB;
+        text-align: left;
+        width: 65%;
+        margin-top: -25px;
+      }
+      
+      .pie-chart__legend li {
+        height: 1.25em;
+        margin-bottom: 0.7em;
+        padding-left: 0.5em;
+        border-left: 1.25em solid; /* Remove the color from here */
+      }
+      
+      .pie-chart__legend em {
+        font-style: normal;
+      }
+      
+      .pie-chart__legend span {
+        float: right;
+      }
+      
+      /* Set the background color for the Sustainability Percentage box to green */
+      .pie-chart__legend li:first-child {
+        border-color: #55833D;
+      }
+      
+}
+h1 {
+    font-family: 'Dm sans';
+    margin-left: 40px;
+}
+.buttons {
+    margin-left: 1109px;
+    margin-top: -48px;
+}
+hr {
+    margin-top: 20px;
+    color: black;
+    border: 2px solid;
+}
+.report-txt {
+    margin-top: -500px;
+    margin-left: 540px;
+ 
+}
+.report-txt h2 {
+    font-size: xxx-larger;
+    font-family: 'Dm sans';
+    font-weight: bold;
+    text-align: center;
+    margin-right: 90px;
+    
+}
+.report-txt p {
+    margin-top: 30px;
+    font-size: large;
+    font-family: 'Dm sans';
+    text-align: left;
+    width: fit-content;
+}
+.report-txt h3 {
+    margin-top: 70px;
+    font-family: 'Dm sans';
+    text-align: left;
+    width: fit-content;
+}
+.report-txt li {
+    font-family: 'Dm sans';
+    font-size: large;
+    margin-top: 04px;
+}
+.report-txt h3 {
+    font-family: 'Dm sans';
+    margin-left: 4px;
+    margin-top: 33px;
+
+}
